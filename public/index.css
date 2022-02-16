@@ -1,0 +1,61 @@
+body{
+    background-color:#ecbd30;
+    
+    
+}
+.forget-pwd > a{
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.box{
+    height: fit-content;
+    width: 400px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: black 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: auto;
+
+}
+.forget-password .panel-default{
+    padding: 10%;
+   
+    margin-top: -28px;
+}
+
+img{
+    width:25%;
+    margin-bottom:5%;
+    margin-top:7%;
+}
+.btnForget{
+    background: #c0392b;
+    border:none;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-control {
+      width:250px ;
+    }
+    .box{
+        width: 280px;
+        align-self: center;
+        
+        
+    }
+
+    .col-md-12{
+        width: 90%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: "center";
+
+    }
+
+   
+  } 
+

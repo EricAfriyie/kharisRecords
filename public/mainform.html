@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KharisRecords | Attendance-Form</title>
+
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+    
+   
+  </head>
+  <body>
+    <div class="container forget-password">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-4">
+          <div class="panel panel-default">
+            <div class="box">
+              <div class="text-center">
+                <img
+                  src="https://i.ibb.co/rshckyB/car-key.png"
+                  alt="car-key"
+                  border="0"
+                />
+                <h2 class="text-center">Kharis Records</h2>
+                <p>Enter attendance details here.</p>
+
+                <form method="post"  action="https://script.google.com/macros/s/AKfycbxvqN7EFj5dJVP_XpNMFDpCsg0xkIZgBYzUrZD7kZlhWJ1jPqJkI9g1w17RSZQClcDB3w/exec">
+                 
+
+                  <div class="mb-3">
+
+                    <select name="Service" id="exampleFormControlInput1" class="form-control">
+                      <option value="" disabled selected hidden>Choose a service</option>
+                      <option value="Victory Service">Victory Service</option>
+                      <option value="Teaching Service">Teaching Service</option>
+                      <option value="Breakthrough Service">Breakthrough Service</option>
+                      <option value="Intercessory">Intercessory</option>
+                      <option value="Anniversary">Anniversary</option>
+                      <option value="Greater Grace">Greater Grace</option>
+                      <option value="No Oil No Flame">No Oil No Flame</option>
+                      
+                    </select>
+                  </div> 
+
+                  <div class="mb-3">
+                    <input
+                    name="Date"
+                      type="date"
+                      class="form-control"
+                      id="Date1"
+                      placeholder="Date"
+                    />
+                  </div>
+
+                 
+
+                 
+
+                  <div class="mb-3">
+                    <input
+                    name="Female"
+                      type="text"
+                      class="form-control"
+                      id="nofemales"
+                      placeholder="Number of females"
+                    />
+                  </div>
+
+
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <input
+                      name="Male"
+                      type="text"
+                        class="form-control"
+                        id="nomales"
+                        placeholder="Number of males"
+                      />
+                    </div>
+
+
+                    <div class="mb-3">
+                      <input
+                      name="Children"
+                        type="text"
+                        class="form-control"
+                        id="nochildren"
+                        placeholder="Number of children"
+                      />
+                    </div>
+
+
+
+                    
+                    <div class="mb-3">
+                      <input
+                      name="New-Comers"
+                        type="text"
+                        class="form-control"
+                        id="New-comers"
+                        placeholder="New comers"
+                      />
+                    </div>
+
+
+                   
+                  
+                 
+                 
+
+                  <div class="form-group">
+                    <input
+                      name="Submit"
+                      class="btn btn-lg btn-primary btn-block btnForget"
+                      value="Submit Details"
+                      type="submit"
+                      onclick="total()"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function total() {
+        document.location.href="signout.html"
+        var males = parseInt(document.getElementById("nomales").value);
+        var females = parseInt(document.getElementById("nofemales").value);
+        var child=parseInt(document.getElementById("nochildren").value);
+        var results=males+females;
+        var grand=results+child;
+        alert("Are you sure the total number of adult service is "+ results+"?");
+        alert("Are you sure the grand total number of people in church is "+grand+ "?");
+        
+        
+       
+     
+        
+
+     
+      };
+
+      
+    </script>
+
+
+
+  </body>
+</html>
